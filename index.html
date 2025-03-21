@@ -1,129 +1,122 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Web App</title>
-    <meta name="description" content="Simple HTML, CSS, and JavaScript Web App" />
-    <meta name="author" content="Lovable" />
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">MyWebApp</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle">Menu</button>
+    </nav>
+  </header>
 
-  <body>
-    <header>
-      <nav>
-        <div class="logo">PureDesign</div>
-        <ul class="nav-links">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <button class="menu-toggle">Menu</button>
-      </nav>
-    </header>
-    
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Simple. Beautiful. Functional.</h1>
-          <p>Create stunning designs with our intuitive tools and templates.</p>
-          <button class="cta-button">Get Started</button>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to MyWebApp</h1>
+        <p>A simple, responsive web application created with HTML, CSS, and JavaScript.</p>
+        <button id="cta-button" class="cta-button">Get Started</button>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>We create simple but powerful web applications that help you achieve your goals. Our focus is on clean design and intuitive user experience.</p>
+          <p>Founded in 2023, our team is dedicated to bringing the best web solutions to our clients.</p>
         </div>
-      </section>
-      
-      <section class="features">
-        <h2>Our Features</h2>
-        <div class="feature-cards">
-          <div class="feature-card">
-            <div class="feature-icon">🎨</div>
-            <h3>Beautiful Design</h3>
-            <p>Create stunning visuals with our intuitive design tools.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Fast Performance</h3>
-            <p>Optimized for speed and efficiency across all devices.</p>
-          </div>
-          <div class="feature-card">
-            <div class="feature-icon">🔒</div>
-            <h3>Secure Platform</h3>
-            <p>Your data is protected with enterprise-grade security.</p>
-          </div>
+        <div class="about-image">
+          <img src="https://placehold.co/400x300" alt="About us image">
         </div>
-      </section>
-      
-      <section class="products">
-        <h2>Our Products</h2>
-        <div class="product-showcase">
-          <div class="product-card">
-            <img src="https://placehold.co/300x200" alt="Product image">
-            <h3>Product One</h3>
-            <p>A beautiful and functional design solution.</p>
-            <button class="product-button">Learn More</button>
-          </div>
-          <div class="product-card">
-            <img src="https://placehold.co/300x200" alt="Product image">
-            <h3>Product Two</h3>
-            <p>Streamlined for maximum productivity.</p>
-            <button class="product-button">Learn More</button>
-          </div>
-          <div class="product-card">
-            <img src="https://placehold.co/300x200" alt="Product image">
-            <h3>Product Three</h3>
-            <p>Designed with users in mind.</p>
-            <button class="product-button">Learn More</button>
-          </div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Web Design</h3>
+          <p>Creative and responsive designs that look great on any device.</p>
         </div>
-      </section>
-    </main>
-    
-    <footer>
-      <div class="footer-content">
-        <div class="footer-info">
-          <div class="footer-logo">PureDesign</div>
-          <p>Creating products with the perfect balance of form and function.</p>
-          <div class="social-links">
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
-          </div>
+        <div class="service-card">
+          <div class="service-icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Custom web applications built with the latest technologies.</p>
         </div>
-        <div class="footer-links">
-          <div class="footer-column">
-            <h3>Product</h3>
-            <ul>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Downloads</a></li>
-              <li><a href="#">Updates</a></li>
-            </ul>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Mobile Apps</h3>
+          <p>Native and hybrid mobile applications for iOS and Android.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
           </div>
-          <div class="footer-column">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="submit-button">Send Message</button>
+        </form>
+        <div class="contact-info">
+          <h3>Get In Touch</h3>
+          <p>We'd love to hear from you. Fill out the form or contact us using the information below.</p>
+          <div class="info-item">
+            <span class="info-label">Email:</span>
+            <span class="info-value">info@mywebapp.com</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Phone:</span>
+            <span class="info-value">+1 (123) 456-7890</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Address:</span>
+            <span class="info-value">123 Web App Street, Internet City</span>
           </div>
         </div>
       </div>
-      <div class="copyright">
-        <p>&copy; 2023 PureDesign. All rights reserved.</p>
-        <div class="legal-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">MyWebApp</div>
+      <div class="social-links">
+        <a href="#" class="social-link">Twitter</a>
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">LinkedIn</a>
       </div>
-    </footer>
-    
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 MyWebApp. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
